@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img
+        {
+            height: 350px;
+            width: 200px;
+            /* background: red; */
+            margin: 70px auto;
+            text-align: center;
+            box-shadow: 0px 0px 10px rgb(15, 15, 15);
+            position: relative;
+            
+        }
+        .top
+        {
+            height: 250px;
+            background: blue;
+            position: relative;
+            backface-visibility: hidden;
+            transition: 2s;
+        }
+        .bottom
+        {
+            height: 40px;
+            width: 200px;
+            background: rgb(14, 14, 13);
+            color: aliceblue;
+            transition: 1s;
+            position: absolute;
+            opacity: 0;
+            line-height: 40px;
+            top: 0px;
+            cursor: pointer;
+        }
+        .down
+        {
+            height: 100px;
+            background: rgb(246, 249, 250);
+            margin: 0;
+            padding: 0;
+            position: relative;
+            text-align: center;
+        }
+        .img:hover .bottom
+        {
+           top: 210px;
+           opacity: 1; 
+           
+        }
+        .bottom:hover
+        {
+            background:rgb(6, 244, 200) ;
+        }
+        .New
+        {
+           background: rgba(255, 0, 0, 0.635);
+           height: 20px;
+           width: 40px;
+           position: absolute;
+           top: 0;
+           right: 0;
+        }
+        .down h6
+        {
+            width: 100%;
+            position: absolute;
+            font-size: 15px;
+            color: red;
+            top: -30px;
+            left: 0;
+        }
+
+        .down h5
+        {
+            width: 100%;
+            position: absolute;
+            color: black;
+            top: 8px;
+            left: 0;
+        }
+        .down h4{
+            width: 50%;
+            height: 30px;
+            line-height: 30px;
+            background: aquamarine ;
+            position: absolute;
+            font-size: 10px;
+            top: 43px;
+            left: 48px;
+            transition: 0.50s;
+            cursor: pointer;
+        }
+        h4:hover 
+        {
+           outline-offset: 5px;
+           outline: 2px solid rgb(10, 241, 207);
+        }
+        .pinu{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 250px;
+            backface-visibility: hidden;
+            transition: 2s;
+          
+            
+        }
+        .top{
+            transform: rotateY(180deg);
+        }
+        .pinu{
+            transform: rotateY(0deg) ;
+        }
+        .img:hover .top{
+            transform: rotateY(0deg);
+        }
+        .img:hover .pinu{
+            transform: rotateY(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="img">
+        <div class="top">
+            <img src="http://www.shoppingforfun.in/images/m7.jpg" alt=""height="100%" width="100%"></div>
+            <div class="pinu">
+                <img src="http://www.shoppingforfun.in/images/m7.jpg" alt=""height="100%" width="100%"></div>
+               
+                <div class="bottom">QUICK VIWE</div>
+        <div class="down">
+            <h6>Analog Watch</h6>
+            <h5>$160.99</h5>
+            <h4>ADD TO CART</h4>
+        </div>
+        <div class="New">New</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+
+        }
+        header
+        {
+            width: 1000px;
+            height: 1000px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image:url(https://www.shutterstock.com/image-vector/seamless-pattern-men-apparel-accessories-600w-1354933418.jpg);
+        }
+        nav{
+            height: 15vh;
+            width: 100%;
+            background: rgb(250, 98, 0); 
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            text-transform: uppercase;
+        }
+
+        nav .logo
+        {
+            width: 15%;
+            text-align: center;
+        }
+
+        nav .menu
+        {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            
+
+        }
+             nav .menu a
+        {
+            width: 55%;
+            color: white;
+            text-decoration: none;
+            font-weight:bold ;
+        }
+
+        nav .manu a:first-child
+        
+        {
+            color: #09f8c8;
+        }
+
+        main
+        {
+            height: 85vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        section h3
+        {
+             font-size: 35px;
+             font-weight: 200;
+             letter-spacing: 3px;
+        }
+
+        section p
+        {
+            margin: 30px 0 20px 0;
+            font-size: 55px;
+            font-weight: 700;
+            text-shadow: 2px 1px 5px black;
+            text-transform: uppercase;
+        }
+
+        section a 
+        {
+            padding: 12px 30px;
+            border-radius: 4px;
+            outline: none;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 1px;
+            transition: all 1s ease;
+        }
+
+        section .btnone
+        {
+           background: #fff;
+           color: #000;
+        }
+
+        .btnone:hover{
+            background: #00b894;
+            color: #fff;
+        }
+
+        .btntwo:hover
+        {
+            background:white;
+            color: #000;
+        }
+
+        section .btntwo
+        {
+            background: #00b894;
+            color: white;
+
+        }
+
+        .change content
+        {
+            content: '';
+            animation: changetext 10s infinite linear;
+            color: #00b894;
+        }
+
+        @keyframes changetext
+        {
+            0%{content: "watch" ;}
+        }
+        
+         </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo"><h1 class="animated infinite heartBeat">ZONE 04</h1></div>
+            <div class="menu">
+                <a href="#">HOME</a>    
+                <a href="#">GALLERY</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </nav>
+        <main>
+            <section>
+                <h3>WELCOME TO ZONE-04</h3>
+                <p>MUST VISIT <span class="change_content"></span></p>
+                <a href="#"  class="btnone">LOGIN</a>
+                
+                <a href="#" class="btntwo">signup here</a>
+            </section>
+        </main>
+    </header>
+</body>
+</html>

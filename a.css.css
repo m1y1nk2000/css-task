@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.X
+{
+    margin-top:360px ;
+    text-align: center;
+    /* color: aqua; */
+}
+.btn
+{
+    border: 1px solid #1111;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserret";
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn1,.btn2{
+    background-color: aquamarine;
+}

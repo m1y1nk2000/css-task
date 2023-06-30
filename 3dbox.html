@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mn{
+            height: 700px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        .main
+        {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            animation: hii 2s ease-in-out infinite;
+            transform-style: preserve-3d;
+            
+            
+        }
+        .one
+        {
+         height: 100px;
+         width: 100px;
+         background: red;
+         position: absolute;
+         top: 0;
+            left: 0;
+            backface-visibility:hidden;
+            transform: rotateX(0deg) translateZ(50px);
+            border-radius: 30px;
+        }
+        .two
+        {
+            height: 100px;
+            width: 100px;
+            background: lightblue;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility:hidden;
+            transform: rotateY(90deg) translateZ(50px);
+            border-radius: 30px;
+        }
+        .three
+        {
+            height: 100px;
+            width: 100px;
+            background: lightcoral;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility:hidden;
+            transform: rotateY(180deg) translateZ(50px);
+            border-radius: 30px;
+        }
+        .four
+        {
+            height: 100px;
+            width: 100px;
+            background: lightgreen;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility:hidden;
+            transform: rotateY(-90deg) translateZ(50px);
+            border-radius: 30px;
+        }
+        .five
+        {
+            height: 100px;
+            width: 100px;
+            background: lightseagreen;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility:hidden;
+            transform: rotateX(90deg) translateZ(50px);
+            border-radius: 30px;
+            
+        }
+        .six
+        {
+            height: 100px;
+            width: 100px;
+            background: lightslategrey;
+            position: absolute;
+            top: 0;
+            left: 0;
+            backface-visibility:hidden;
+            transform: rotateX(-90deg) translateZ(50px);
+            border-radius: 30px;
+        }
+        @keyframes hii{
+            0%{transform: rotateX(0deg) rotateY(0deg);
+            }
+            100%{transform: rotateX(360deg
+                ) rotateY(360deg);}
+        }
+
+    
+        
+    </style>
+</head>
+<body>
+    <div class="mn">
+    <div class="main">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+        <div class="five">5</div>
+        <div class="six">6</div>
+    </div>
+    </div>
+
+</body>
+</html>

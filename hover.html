@@ -1,0 +1,57 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .m
+        {
+            height: 80px;
+            width: 200px;
+            background: rgb(52, 18, 223);
+            margin: 100% auto;
+            padding: 100% auto;
+            position: relative;
+            text-align: center;
+            line-height: 80px;
+            font-size: 40px;
+            z-index: 1;
+            color: white;
+            overflow: hidden;
+            transition: 0.30s;
+            outline: 5px solid  rgb(52, 18, 223);
+        }
+        .p
+        {
+            height: 80px;
+            width: 200px;
+            background: rgb(10, 208, 243);
+          z-index: -1;
+            position: absolute;
+            top: 0;
+            left: -100%;
+            transition: 0.30s;
+        }
+        .m:hover .p
+        {
+            left: 0%;
+            
+            
+        }
+        .m:hover 
+        {
+            outline: 5px solid black;
+            outline-offset: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="m">
+       Open
+        <div class="p"></div>
+    </div>
+
+</body>
+</html>

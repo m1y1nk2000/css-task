@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *:before,
+        *:after{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body
+        {
+            background-color: rgb(11, 0, 0);
+        }
+        nav{
+            height: 100vh;
+            width: 60vw;
+            min-width: 600px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+            justify-content: space-around;
+           }
+
+           a{
+            position: relative;
+            text-decoration: none;
+            font-family: "poppins",sans-serif;
+            color: rgb(55, 146, 226);
+            font-size: 18px;
+            letter-spacing: 5px;
+            padding: 0 10px;
+
+           }
+
+           a::after
+           {
+            content: "";
+            position: absolute;
+            background-color: rgb(255, 0, 0);
+            height: 3px;
+            width: 0%;
+            left: 0;
+            bottom: -10px;
+            transition: 0.3s;
+
+           }
+           a:hover
+           {
+            color:#ffff;
+           }
+
+           a:hover::after
+           {
+            width: 100%;
+           }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#Home">home</a>
+        <a href="#Click">click</a>
+        <a href="#Login">login</a>
+        <a href="#Exit">exit</a>
+        
+    </nav>
+</body>
+</html>

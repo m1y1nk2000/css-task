@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Ysabeau+Infant:wght@200&display=swap" rel="stylesheet">
+    <style>
+       .main
+        {
+             width: 200vh;
+            height: 100vh;
+            background-image: url(https://assets.architecturaldigest.in/photos/60083e76274aca243711c3a4/16:9/w_2560%2Cc_limit/ghaziabad-uttar-pradesh-homes-photos-1366x768.jpg);
+            background-repeat: no-repeat;
+            margin: auto;
+        }
+        .nav 
+        {
+          display:grid;
+          grid-template-columns:2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10fr 3fr 5fr 5fr 2fr;
+          grid-template-rows: 40px; 
+          background: rgba(255, 255, 255, 0.221);
+          background: transparent;
+        }
+        .x
+        {
+            border: 1px solid rgba(250, 247, 247, 0.286);
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .top2
+        {
+          display:grid;
+          grid-template-columns:30fr 5fr 5fr 5fr 5fr 5fr 7fr 5fr 28fr 12fr 5fr;
+          background: rgba(255, 255, 255, 0.221);
+          background: transparent;
+          padding-top: 20px;
+          /* box-shadow: 0px 3px 10px black; */
+        }
+        .top
+        {
+            /* border: 1px solid rgba(250, 247, 247, 0.286); */
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            color: white;
+            font-size: 13px;
+            font-family:'Josefin Sans', sans-serif;
+            padding-top: 5px;
+            position: relative;
+        }
+        .fa-heart,.fa-envelope-o,.fa-whatsapp,.fa-phone
+        {
+            padding: 8px;
+            font-size: 15px;
+        }
+        .top2 .top
+        {
+            font-size: 16px;
+            font-weight: bold;
+            padding: 10px;            
+            /* box-shadow: 0 0 10px black; */
+        }
+         .x,.top{
+            cursor: pointer;
+        }
+        .x:hover{
+            color: rgba(3, 244, 207, 0.994);
+            transition: 1s;
+            padding-bottom: 10px;
+        }
+        ul{
+            visibility: hidden;
+            position: absolute;
+            right: -30px;
+            top: 20px;
+            background: rgb(249, 248, 244);
+            color: black;
+            padding: 20px;
+            /* transition: 1s; */
+            animation: alternate-reverse;
+        }
+        .top:hover ul{
+            visibility:visible;
+        }
+        ul li{
+            padding: 5px;
+        }
+        img
+        {
+            height: 46px;
+            width: 154px;
+            cursor: pointer;
+        }
+        .sidho1
+        {
+            height: 280px;
+            width: 175.20vh;
+            background: rgba(3, 3, 3, 0.729);
+            color: aliceblue;
+            position: absolute;
+            top: 50px;
+            left: -239.0px;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 40px 40px 40px 40px 40px 40px;
+            display: grid;
+            padding-left: 40px;
+        }
+        .top:hover .sidho1
+        {
+           padding-left: 110px;
+           transition: 1s;
+          
+        }
+        .sidho2
+        {
+            height: 280px;
+            width: 160px;
+            background: rgba(3, 3, 3, 0.729);
+            color: aliceblue;
+            position: absolute;
+            /* top: 40px; */
+            left: -17px;
+            grid-template-columns: 10fr 5fr ;
+            grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px ;
+            display: grid;
+            padding:40px 40px ;
+        }
+        .top:hover .sidho2
+        {
+           /* padding-top: 80px; */
+           padding: 50px 50px;
+           top: 50px;
+           transition: 1s;
+        }
+        .sidho3
+        {
+            height: 150px;
+            width: 162vh;
+            background: rgba(3, 3, 3, 0.729);
+            color: aliceblue;
+            position: absolute;
+            top: 50px;
+            left: -367.50px;
+            grid-template-columns: 10fr 10fr 10fr 10fr 10fr ;
+            grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px ;
+            display: grid;
+            padding:60px 100px ;
+        }
+        .top:hover .sidho3
+        {
+           padding-top: 80px;
+           right: 30px;
+           transition: 1s;
+        }
+        .sidho4
+        {
+            height: 220px;
+            width: 150px;
+            background: rgba(3, 3, 3, 0.729);
+            color: aliceblue;
+            position: absolute;
+            top: 50px;
+            left: -17px;
+            grid-template-columns: 5fr 5fr ;
+            grid-template-rows: 40px 40px 40px 40px 40px 40px;
+            display: grid;
+            padding-left: 50px;
+        }
+        .top:hover .sidho4
+        {
+           padding-top:30px;
+           bottom:20px;
+           transition: 1s;
+        }
+        .sidho5
+        {
+            height: 250px;
+            width: 100px;
+            background: rgba(3, 3, 3, 0.729);
+            color: aliceblue;
+            position: absolute;
+            top: 50px;
+            left: -17px;
+            grid-template-columns: 2fr;
+            grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px ;
+            display: grid;
+            padding-left: 60px;
+            
+        }
+        .top:hover .sidho5
+        {
+           padding-right:10px;
+           /* bottom:20px; */
+           transition: 1s;
+        }
+        .sidho6
+        {
+            height: 190px;
+            width: 300px;
+            background: rgba(3, 3, 3, 0.729);
+            color: aliceblue;
+            position: absolute;
+            top: 50px;
+            left: -17px;
+            grid-template-columns: 2fr 2fr 2fr 2fr;
+            grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px ;
+            display: grid;
+            padding-left: 70px;
+            
+        }
+        .top:hover .sidho6
+        {
+           padding:10px 20px 10px;
+           /* bottom:20px; */
+           transition: 1s;
+        }
+        .sidho7
+        {
+            height: 190px;
+            width: 300px;
+            background: rgba(3, 3, 3, 0.729);
+            color: aliceblue;
+            position: absolute;
+            top: 50px;
+            left: -17px;
+            grid-template-columns: 2fr 2fr;
+            grid-template-rows: 40px 40px ;
+            display: grid;
+            padding-left: 70px;
+            
+        }
+        .top:hover .sidho7
+        {
+           padding:10px 20px 10px;
+           /* bottom:20px; */
+           transition: 1s;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <div class="x"></div>
+            <div class="x"><i class="fa fa-facebook" aria-hidden="true"></i></div>
+            <div class="x"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+            <div class="x"><i class="fa fa-pinterest-p" aria-hidden="true"></i></div>
+            <div class="x"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+            <div class="x"><i class="fa fa-vimeo" aria-hidden="true"></i></div> 
+            <div class="x"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+            <div class="x"><i class="fa fa-facebook-official" aria-hidden="true"></i></div>
+            <div class="x"><i class="fa fa-google" aria-hidden="true"></i></div>
+            <div class="x"></div>
+            <div class="x top"><i class="fa fa-heart" aria-hidden="true"></i>Favorites</div>
+            <div class="x top"><i class="fa fa-envelope-o" aria-hidden="true"></i>contact@email.com</div>
+            <div class="x top"><i class="fa fa-whatsapp" aria-hidden="true"></i>+114 8823782889</div>
+            <div class="x"></div>
+
+        </div>
+        <div class="top2">
+            <div class="top">
+                <img src="https://wpresidence.net/wp-content/uploads/2019/11/logo.png" alt="">
+            </div>
+            <div class="top">Home
+                <ul class="sidho1">
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li> <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li> <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                </ul>
+            </div>
+            <div class="top">Demos
+                <ul class="sidho2">
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                   
+                </ul>
+            </div>
+            <div class="top">List
+                <ul class="sidho3">
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li> <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    
+                </ul>
+            </div>
+            <div class="top">Propety
+                <ul class="sidho4">
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                </ul>
+            </div>
+            <div class="top">Pages
+                <ul class="sidho5">
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                </ul>
+            </div>
+            <div class="top">Elements
+                <ul class="sidho6">
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li> <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                </ul>
+            </div>
+            <div class="top">Search
+                <ul class="sidho7">
+                    <li>demo1</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                    <li>demo2</li>
+                    <li>demo3</li>
+                </ul>
+            </div>
+            <div class="top"><i class="fa fa-phone" aria-hidden="true"></i>888-345-1920</div>
+            <div class="top">2</div>
+            <div class="top">3</div>
+        </div>
+
+    </div>
+</body>
+</html>

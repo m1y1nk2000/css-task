@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding: 0;
+            
+        }
+        .image
+        {
+        
+          height: 1500px;
+          width: 1500px;
+          background: url(https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/87d7e901-4d08-4456-9d62-07e821aff45b/air-max-90-futura-shoes-x9msLm.png);
+          background-repeat: no-repeat;
+          position: relative;
+          background-size: 80% 80%;
+
+                
+        }
+        .image h1
+        {
+
+            /* border: 2px solid; */
+           
+            color:rgb(239, 107, 19);
+            font-size: 200px;
+            position: absolute;
+            top: 200px;
+            left: 300px;
+            border-radius: 10px;
+            
+            transition: 1s;
+            z-index:1;
+        }
+        .image h1:hover
+        {
+            outline: 1px solid rgb(242, 6, 207);
+            outline-offset: 90px;
+             
+        }
+
+        .image2
+        {
+            height: 600px;
+            width: 900px;
+            background: url(nike_logo_2-removebg-preview.png);
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 30px;
+            left: 220px;
+            z-index: 0;
+            background-size: 110% 110%;
+            background-position: -200px 0;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="image">
+        <h1>Nike</h1>
+        <div class="image2"></div>
+    </div>
+</body>
+</html>

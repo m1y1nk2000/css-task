@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: black;
+        }
+
+        .main {
+            height: 350px;
+            width: 180px;
+            background: rgba(211, 211, 211, 0.436);
+            margin: 150px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 2px solid blue; */
+            border-radius: 20px;
+            box-shadow:0 0 10px white;
+
+        }
+
+        .r1 {
+            height: 120px;
+            width: 120px;
+            background: rgb(15, 14, 14);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 7px solid black;
+            /* padding: 7px; */
+            /* box-shadow: 5px 5px 5px white , 5px 5px 5px white; */
+            
+         
+        }
+
+        .r1::before {
+            content: "";
+            height: 120px;
+            width: 120px;
+            background: conic-gradient(transparent 0deg, transparent 90deg, rgb(244, 4, 4) 90deg, rgb(243, 2, 2) 360deg);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-radius: 50%;
+            /* border: 2px solid orangered; */
+
+
+        }
+
+        .r1::after {
+            content: "";
+            height: 100px;
+            width: 100px;
+            background: rgb(17, 17, 14);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            /* border: 2px solid orangered; */
+
+            border-radius: 50%;
+        }
+
+        .r2::before {
+            content: "";
+            height: 10px;
+            width: 10px;
+            background: rgb(244, 4, 4);
+            position: absolute;
+            top: 0;
+            left: 54px;
+            border-radius: 50%;
+        }
+
+        .r2::after {
+            content: "";
+            height: 10px;
+            width: 10px;
+            background: rgb(244, 4, 4);
+            position: absolute;
+            top: 54px;
+            left: 110px;
+            border-radius: 50%;
+            z-index: 1;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="r1">
+            <div class="r2"></div>
+        </div>
+    </div>
+</body>
+
+</html>
